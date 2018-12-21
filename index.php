@@ -10,18 +10,20 @@
 <body>
 	<div class="container">
 		<div class="connexion col-md-4 mx-auto border rounded p-5">
-			<form method="POST" action="../controleur/connexion.php">
-				<form>
-					<div class="form-group">
-						<label for="email">Email address</label>
-						<input type="email" class="form-control" id="email" placeholder="email@example.com">
-					</div>
-					<div class="form-group">
-						<label for="pwd">Password</label>
-						<input type="password" class="form-control" id="pwd" placeholder="Password">
-					</div>
-					<button type="submit" class="btn btn-primary">Sign in</button>
-				</form>
+			<form method="POST" action="connect.php">
+				<div class="form-group">
+					<label for="user">Username</label>
+					<input type="text" class="form-control" id="user" placeholder="Username" required>
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Password" required>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+				<?php
+					if (isset($empty_fields))
+						echo '<div class="alert alert-danger" role="alert">'.$empty_fields.'</div>';
+				?>
 			</form>
 		</div>
 	</div>
