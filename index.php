@@ -3,26 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AperO</title>
-<link rel="icon" href="./img/logo.ico"/>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<link href="./style.css" rel="stylesheet" type="text/css">
+<title>Archub</title>
+<link href="./scss/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-	<body>
-		<div class="container">
-			<div class="announce">
-				<h1>CONNECTION</h1>
-				<form method="POST" action="../controleur/connexion.php">
-					<form>
-						<h4>Login</h4>
-						<input type="text" name="user">
-						<h4>Mot de passe</h4>
-						<input type='password' name="pwd"/>
-						<input type='submit' value='valider'/>
-					</form>
+<body>
+	<div class="container">
+		<div class="connexion col-md-4 mx-auto border rounded p-5">
+			<form method="POST" action="../controleur/connexion.php">
+				<form>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" placeholder="email@example.com">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password</label>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-primary">Sign in</button>
 				</form>
-			</div>
+			</form>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
