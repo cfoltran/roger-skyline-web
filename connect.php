@@ -5,13 +5,14 @@
 	if(!empty($_POST["user"]) && !empty($_POST["pwd"])) {
 		$user = $_POST["user"];
 		$pwd = sha1($_POST["pwd"]);
-		$request = mysqli_query($co, "SELECT * FROM USERS WHERE username = '$user' AND password = '$pwd'");
+		$request = mysqli_query($co, "SELECT * FROM USERS WHERE user_name = '$user' AND password = '$pwd'");
 		if (mysqli_num_rows($request) > 0) {
-			$membre = new Benevole($co,$user,$pwd);
+			var_dump("bite");
+			$membre = new Member($co,$user,$pwd);
 			$membre->connexion();
 			$_SESSION["membre"] = $membre;
 			$_SESSION["user"] = $membre->user;
-			header('Location: ../vue/caisse.php');
+			//header('Location: ../vue/caisse.php');
 		}
 		else
             header('Location: index.php');
