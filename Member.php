@@ -13,7 +13,7 @@
 				$this->pwd = $list_arg[2];
 		}
 	}
-
+	
 		function modif_mdepasse($mdp) {
 			$this->pwd = $mdp;
 			mysqli_query("UPDATE USERS SET pwd = '$this->pwd' WHERE id = '$this->id'");

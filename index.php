@@ -13,11 +13,11 @@
 			<form method="POST" action="connect.php">
 				<div class="form-group">
 					<label for="user">Username</label>
-					<input type="text" class="form-control" id="user" placeholder="Username" required>
+					<input type="text" class="form-control" name="user" id="user" placeholder="Username" required>
 				</div>
 				<div class="form-group">
 					<label for="pwd">Password</label>
-					<input type="password" class="form-control" id="pwd" placeholder="Password" required>
+					<input type="password" class="form-control" name="pwd" id="pwd" placeholder="Password" required>
 				</div>
 				<button type="submit" class="btn btn-primary">Sign in</button>
 				<?php
