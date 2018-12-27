@@ -7,9 +7,9 @@
 		public $co;
 
 		public function __construct() {
-			$this->host = "90.127.201.87";
-			$this->user = "remote";
-			$this->pwd = "Wpkxmy7f!@#$";
+			$this->host = "86.245.18.192:3306";
+			$this->user = "usr";
+			$this->pwd = "coucouhibou";
 			$this->bd = "hubDB";
 		}
 		public function connexion() {
