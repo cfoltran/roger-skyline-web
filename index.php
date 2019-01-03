@@ -16,7 +16,7 @@
 					<input type="text" class="form-control" name="user" id="user" placeholder="Username" required>
 				</div>
 				<div class="form-group">
-					<label for="pwd">Password</label>
+					<label for="pwd">Password :)</label>
 					<input type="password" class="form-control" name="pwd" id="pwd" placeholder="Password" required>
 				</div>
 				<button type="submit" class="btn btn-primary">Sign in</button>

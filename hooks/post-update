@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "********** mise en production *********" 
+cd /srv/http/
+unset GIT_DIR
+git pull origin master
